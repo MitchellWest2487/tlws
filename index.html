@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <title>Timberline Wine & Spirits</title>
+</head>
+
+<body>
+  <header>
+    <div class="name">
+      <h1>Timberline Wine & Spirits</h1>
+    </div>
+    <div class="info">
+      <a href="https://goo.gl/maps/pGLTwCrfA6j19wEJ6" target="_blank">660 Woodbury Glassboro Rd, Sewell, NJ 08080</a>
+      <a id="number" href="javascript:copyNumber()">856-681-2020</a>
+      <a href="mailto:mitchellwest24@gmail.com" target="_blank">email@email.com</a>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="intro">
+      <h1>About Us</h1>
+      <div class="flex">
+        <img src="temp.jpg" alt="picture of store">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt fringilla varius. Sed cursus odio ac porta convallis.
+          Fusce volutpat turpis vel libero rhoncus, eu porttitor dui ullamcorper. Ut sapien lorem, rutrum at ante nec, ultrices maximus sem. Duis id sagittis mauris,
+          at scelerisque lacus. Suspendisse sed ex ac tellus aliquet fringilla quis eu ipsum. Donec feugiat augue ac enim tempus mollis.
+          Vestibulum non commodo ex. Suspendisse potenti.</p>
+        <img src="temp.jpg" alt="picture of store">
+      </div>
+    </div>
+
+    <div class="flex">
+      <div class="hours">
+        <h1>Our Hours</h1>
+        <h2>Monday: 9:00AM - 9:00PM</h2>
+        <h2>Tuesday: 9:00AM - 9:00PM</h2>
+        <h2>Wendsday: 9:00AM - 9:00PM</h2>
+        <h2>Thursday: 9:00AM - 9:00PM</h2>
+        <h2>Friday: 9:00AM - 9:00PM</h2>
+        <h2>Saturday: 10:00AM - 9:00PM</h2>
+        <h2>Sunday: 10:00AM - 7:00PM</h2>
+      </div>
+      <div class="map">
+        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=timberline%20wine&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+    </div>
+
+    <div class="contact">
+      <h1>Contact us</h1>
+      <p>If you have any question or sugestions for us please contact us bellow or at email@email.com.</p>
+      <form class="mail-form flex" id="mail-form" action="https://formspree.io/xrgyoyak" method="POST">
+        <div class="form-input">
+          <label for="name">Name: <input id="name" name="name" type="text" required></label>
+          <label for="email">Email: <input id="email" name="email" type="email" required></label>
+        </div>
+        <br>
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" required></textarea>
+        <br>
+        <button id="submit" name="submit" type="submit">Submit</button>
+        <br>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>hello</p>
+  </footer>
+</body>
+
+</html>
