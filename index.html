@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,27 +13,27 @@
     <div class="name">
       <h1>Timberline Wine & Spirits</h1>
     </div>
-    <div class="info">
-      <a href="https://goo.gl/maps/pGLTwCrfA6j19wEJ6" target="_blank">660 Woodbury Glassboro Rd, Sewell, NJ 08080</a>
-      <a id="number" href="javascript:copyNumber()">856-681-2020</a>
-      <a href="mailto:mitchellwest24@gmail.com" target="_blank">email@email.com</a>
+    <div class="nav flex">
+      <a href="https://goo.gl/maps/pGLTwCrfA6j19wEJ6" target="_blank" rel="noreferrer" title="Open Maps">660 Woodbury Glassboro Rd, Sewell, NJ 08080</a>
+      <a id="number" href="javascript:copyNumber()" title="Click to copy">856-681-2020</a>
+      <a href="mailto:mitchellwest24@gmail.com" target="_blank" title="Open email">email@email.com</a>
     </div>
   </header>
 
   <div class="content">
-    <div class="intro">
-      <h1>About Us</h1>
-      <div class="flex">
-        <img src="temp.jpg" alt="picture of store">
+    <section class="about flex">
+      <img src="temp.jpg" alt="picture of store">
+      <div>
+        <h1>About Us</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt fringilla varius. Sed cursus odio ac porta convallis.
           Fusce volutpat turpis vel libero rhoncus, eu porttitor dui ullamcorper. Ut sapien lorem, rutrum at ante nec, ultrices maximus sem. Duis id sagittis mauris,
           at scelerisque lacus. Suspendisse sed ex ac tellus aliquet fringilla quis eu ipsum. Donec feugiat augue ac enim tempus mollis.
           Vestibulum non commodo ex. Suspendisse potenti.</p>
-        <img src="temp.jpg" alt="picture of store">
       </div>
-    </div>
+      <img src="temp.jpg" alt="picture of store">
+    </section>
 
-    <div class="flex">
+    <section class="info flex">
       <div class="hours">
         <h1>Our Hours</h1>
         <h2>Monday: 9:00AM - 9:00PM</h2>
@@ -45,30 +45,31 @@
         <h2>Sunday: 10:00AM - 7:00PM</h2>
       </div>
       <div class="map">
-        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=timberline%20wine&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        <iframe frameborder="0" src="https://maps.google.com/maps?q=timberline%20wine&t=&z=13&ie=UTF8&iwloc=&output=embed" title="google maps"></iframe>
       </div>
-    </div>
+    </section>
 
-    <div class="contact">
+    <section class="contact">
       <h1>Contact us</h1>
       <p>If you have any question or sugestions for us please contact us bellow or at email@email.com.</p>
-      <form class="mail-form flex" id="mail-form" action="https://formspree.io/xrgyoyak" method="POST">
-        <div class="form-input">
+      <form class="mail-form" id="mail-form" action="https://formspree.io/xrgyoyak" method="POST">
+        <div class="form-top">
           <label for="name">Name: <input id="name" name="name" type="text" required></label>
           <label for="email">Email: <input id="email" name="email" type="email" required></label>
         </div>
         <br>
-        <label for="message">Message: </label>
-        <textarea id="message" name="message" required></textarea>
-        <br>
-        <button id="submit" name="submit" type="submit">Submit</button>
-        <br>
+        <div class="form-bottom">
+          <label for="message">Message: </label><br>
+          <textarea id="message" name="message" data-gramm="false" required></textarea>
+          <button id="submit" name="submit" type="submit">Submit</button>
+        </div>
       </form>
-    </div>
+    </section>
   </div>
 
   <footer>
-    <p>hello i would like to die</p>
+    <a href="https://facebook.com" target="_blank" rel="noreferrer"><img src="facebook.png" alt="facebook icon" href="facebook.com"></a>
+    <a href="https://twitter.com" target="_blank" rel="noreferrer"><img src="twitter.png" alt="twitter icon"></a>
   </footer>
 </body>
 
