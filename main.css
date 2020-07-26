@@ -35,7 +35,6 @@ p {
 
 .nav {
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .nav a {
@@ -127,4 +126,39 @@ footer {
 footer img {
   width: 40px;
   margin: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .name h1{
+    font-size: 60px;
+  }
+
+  .nav{
+    align-items: center;
+  }
+
+  .nav a{
+    margin: 10px 0 10px 0;
+  }
+
+  .flex{
+    flex-direction: column;
+  }
+
+  .about{
+    justify-content: center;
+  }
+
+  .about div{
+    width: 100%;
+  }
+
+  .about img {
+    display: none;
+  }
+
+  .map{
+    height: 400px;
+  }
+
 }
