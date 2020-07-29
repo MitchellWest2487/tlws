@@ -17,10 +17,6 @@ header {
   padding-bottom: 15px;
 }
 
-.flex {
-  display: flex;
-}
-
 h1 {
   font-size: 50px;
 }
@@ -29,8 +25,12 @@ p {
   font-size: 20px;
 }
 
+.flex {
+  display: flex;
+}
+
 .name h1 {
-  font-size: 90px;
+  font-size: 100px;
 }
 
 .nav {
@@ -61,14 +61,15 @@ p {
   justify-content: space-between;
   margin-bottom: 25px;
 }
-
-.about img {
-  width: 15%;
+.store-img{
+  background-image: url("temp.jpg");
+  background-size:cover;
+  flex-basis:20%;
   border-radius: 10%;
 }
 
-.about div {
-  width: 60%;
+.about-text {
+  flex-basis:55%;
 }
 
 .hours {
@@ -128,7 +129,7 @@ footer img {
   margin: 10px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .name h1{
     font-size: 60px;
   }
