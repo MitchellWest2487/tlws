@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="main.js"></script>
   <link rel="stylesheet" href="main.css">
   <title>Timberline Wine & Spirits</title>
@@ -62,11 +62,14 @@
           <label for="message">Message: </label><br>
           <textarea id="message" name="message" data-gramm="false" required></textarea>
           <button id="submit" name="submit" type="submit">Submit</button>
+          <div class="notif" id="notif">
+            <h2>Your form has been submited!</h2>
+          </div>
         </div>
       </form>
+      <button onclick="showMsg()" type="button" name="button" id="test">test</button>
     </section>
   </div>
-
   <footer>
     <a href="https://facebook.com" target="_blank" rel="noreferrer"><img src="facebook.png" alt="facebook icon" href="facebook.com"></a>
     <a href="https://twitter.com" target="_blank" rel="noreferrer"><img src="twitter.png" alt="twitter icon"></a>

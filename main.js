@@ -9,9 +9,12 @@ window.addEventListener("DOMContentLoaded", function() {
   // Success and Error functions for after the form is submitted
 
   function success() {
+    var notif = document.getElementById("notif");
+    notif.style.display = ('block');
+    notif.style.opacity = ('1');
+    setTimeout(() => {notif.style.opacity = ('0');}, 3000);
+    setTimeout(() => {notif.style.display = ('none');}, 4000);
     form.reset();
-    button.style = "display: none ";
-    status.innerHTML = "Thanks!";
   }
 
   function error() {

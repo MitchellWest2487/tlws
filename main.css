@@ -30,7 +30,7 @@ p {
 }
 
 .name h1 {
-  font-size: 100px;
+  font-size: calc(45px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .nav {
@@ -61,15 +61,16 @@ p {
   justify-content: space-between;
   margin-bottom: 25px;
 }
-.store-img{
+
+.store-img {
   background-image: url("temp.jpg");
-  background-size:cover;
-  flex-basis:20%;
+  background-size: cover;
+  flex-basis: 20%;
   border-radius: 10%;
 }
 
 .about-text {
-  flex-basis:55%;
+  flex-basis: 55%;
 }
 
 .hours {
@@ -91,7 +92,7 @@ p {
 
 .contact {
   border: solid black;
-  padding-bottom: 25px;
+  padding: 0 25px 25px 25px;
 }
 
 .form-top label {
@@ -106,9 +107,10 @@ p {
 #message {
   position: relative;
   height: 250px;
-  width: 60%;
+  width: 70%;
   resize: none;
   outline: none;
+  font-size: 15px;
 }
 
 #submit {
@@ -116,6 +118,17 @@ p {
   bottom: 3px;
   right: 0px;
   padding: 5px 20px 5px 20px;
+}
+
+.notif{
+  position: absolute;
+  bottom: 3px;
+  right: 0px;
+  background-color: grey;
+  text-align: center;
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 footer {
@@ -130,36 +143,41 @@ footer img {
 }
 
 @media screen and (max-width: 900px) {
-  .name h1{
-    font-size: 60px;
-  }
-
-  .nav{
-    align-items: center;
-  }
-
-  .nav a{
-    margin: 10px 0 10px 0;
-  }
-
-  .flex{
-    flex-direction: column;
-  }
-
-  .about{
-    justify-content: center;
-  }
-
-  .about div{
-    width: 100%;
-  }
-
-  .about img {
+  .nav {
     display: none;
   }
 
-  .map{
+  .nav a {
+    border: none;
+    text-decoration: underline;
+    margin: 10px 0 10px 0;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .about {
+    justify-content: center;
+  }
+
+  .about div {
+    width: 100%;
+  }
+
+  .store-img {
+    display: none;
+  }
+
+  .map {
     height: 400px;
   }
 
+  .form-top label {
+    display: block;
+  }
+
+  #message {
+    width: 90%;
+  }
 }
