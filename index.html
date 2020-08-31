@@ -9,13 +9,14 @@
 </head>
 
 <body>
-  <header>
+  <header class = "flex">
     <div class="name">
       <h1>Timberline Wine & Spirits</h1>
     </div>
     <div class="nav flex">
+      <a class="copy" id="number" href="javascript:copyNumber()" title="Click to copy">856-681-2020</a>
+      <a class="call" id="number" href="tel:609-617-2119" title="Click to call">856-681-2020</a>
       <a href="https://goo.gl/maps/pGLTwCrfA6j19wEJ6" target="_blank" rel="noreferrer" title="Open Maps">660 Woodbury Glassboro Rd, Sewell, NJ 08080</a>
-      <a id="number" href="tel:609-617-2119" title="Click to call">856-681-2020</a>
       <a href="mailto:mitchellwest24@gmail.com" target="_blank" title="Open email">email@email.com</a>
     </div>
   </header>
@@ -40,8 +41,8 @@
         <h2>Tuesday: 9:00AM - 9:00PM</h2>
         <h2>Wendsday: 9:00AM - 9:00PM</h2>
         <h2>Thursday: 9:00AM - 9:00PM</h2>
-        <h2>Friday: 9:00AM - 9:00PM</h2>
-        <h2>Saturday: 10:00AM - 9:00PM</h2>
+        <h2>Friday: 9:00AM - 9:30PM</h2>
+        <h2>Saturday: 10:00AM - 9:30PM</h2>
         <h2>Sunday: 10:00AM - 7:00PM</h2>
       </div>
       <div class="map">
@@ -51,7 +52,7 @@
 
     <section class="contact">
       <h1>Contact us</h1>
-      <p>If you have any question or sugestions for us please contact us bellow or at email@email.com.</p>
+      <p>If you have any question or sugestions for us please contact us bellow or at email@email.com. You can also give us a call at 856-681-2020.</p>
       <form class="mail-form" id="mail-form" action="https://formspree.io/xrgyoyak" method="POST">
         <div class="form-top">
           <label for="name">Name: <input id="name" name="name" type="text" required></label>
@@ -62,12 +63,12 @@
           <label for="message">Message: </label><br>
           <textarea id="message" name="message" data-gramm="false" required></textarea>
           <button id="submit" name="submit" type="submit">Submit</button>
-          <div class="notif" id="notif">
+          <div class="" id="notif">
             <h2>Your form has been submited!</h2>
           </div>
         </div>
       </form>
-      <button onclick="showMsg()" type="button" name="button" id="test">test</button>
+      <button onclick="test()" type="button" name="button" id="test">test</button>
     </section>
   </div>
   <footer>

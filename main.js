@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", function() {
     notif.style.opacity = ('1');
     setTimeout(() => {notif.style.opacity = ('0');}, 3000);
     setTimeout(() => {notif.style.display = ('none');}, 4000);
-    form.reset();
+
   }
 
   function error() {
@@ -54,4 +54,11 @@ function copyNumber(){
   window.getSelection().addRange(range);
   document.execCommand('copy');
   window.getSelection().removeAllRanges();
+}
+function test(){
+  if(notif.className){
+        document.getElementById('notif').className = '';
+    } else {
+        document.getElementById('notif').className = 'fade';
+    }
 }
